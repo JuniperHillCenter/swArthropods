@@ -1,0 +1,105 @@
+---
+title: 'Permit application for "Grassland arthropods across gradients: monitoring biodiversity and testing theory"'
+author: "Andrew Rominger"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### 13) Describe project by specifically identifying timing, frequency, and how the project is expected to proceed:
+
+### 14) Specifically identify location(s) and/or attach a map for the project:
+
+We will establish 5 grassland and 2 woodland plots within the polygon shown in Figure X. These plots will be established by generating a random set of candidate sites and then rejecting those sites that are abnormal (e.g. coincide with prairie dog or harvester ant mounds) or are sensitive from a management perspective. The sensitivity of candidate sites will be discussed with Refuge staff.
+
+### 15) Identify species or habitats being studied:
+
+All arthropod species will be considered.  We will focus primarily on grassland habitat, but include a small number of woodland plots for comparison (see map in section 14)
+
+### 16) Purpose/hypothesis:
+
+We are interested in establishing long-term monitoring of arthropod diversity and populations in the Southwest.  The purpose of this monitoring is two-fold: First we hope to provide useful information to conservation practitioners about arthropods; second we seek to use these data to test several specific hypotheses including:
+- Lat grad
+- Restoration grad
+- Elevation grad
+
+
+### 17) Expected benefits of research/monitoring:
+
+### 18) Briefly describe project history and context of research/monitoring project:
+
+### 19) Briefly describe project’s relationship to other research/monitoring projects either known of or conducted by the applicant:
+
+### 20) Identify the types of specimen collections to be taken (see specimen collection clause in the instruction section #20) or data to be collected during the proposed project:
+
+### 21) List other cooperators and institutions involved in the project:
+The Juniper Hill Center (<http://juniperhillcenter.org>)
+
+### 22) Generally identify the anticipated timeline for analysis, write-up and publication:
+
+### 23) For research involving animals, attach an Assurance of Animal Care Form or an approval from an Institutional Animal Care and Use Committee? Is a form or approval attached?
+
+No form, not working with vertebrates.
+
+# License/Insurance/Certifications/Permits
+
+### 24a) List and attach copies of any **licenses** you have for equipment operation (i.e., aviation or commercial boats), pesticide applications, transporters) or others if required:
+
+### 24b) List and attach copies of any **insurance** you have (i.e general liability, flight/grounding, contaminants, medical evacuation, or others if required:
+
+### 24c) List and attach copies of any **certifications** you have, such as rat free, hull inspections, CPR/First Aid, or others if required:
+
+### 24d) List and attach copies of any other Federal, State, or Tribal **permits** if required:
+
+# Logistics and Transportation
+
+### 25a) Does project require personnel to stay overnight on the refuge?
+
+No.
+
+### 25b) If yes, how many? And list known personnel involved in overnight stay below:
+
+NA
+
+### 26) Specifically describe all major instrumentation/equipment/gear (i.e. use of drones) and materials used, if applicable or required:
+
+### 27a) Provide details and schedule for the installation of instrumentation:
+
+### 27b) Provide details and schedule for the removal of instrumentation:
+
+### 27c) If instrumentation is permanent, describe need:
+
+### 27d) If instrumentation requires a maintenance schedule, describe needs and schedule:
+
+### 27e) Provide a data collection schedule:
+
+### 28) Provide logistical arrangements for offsite transportation of samples:
+
+### 29a) Provide detailed information on the logistics for onsite, intersite, and/or ship-to-shore transportation to or on the refuge, if required:
+
+### 29b) Provide descriptions, license plate and/or identification numbers of vehicles used for onsite transportation, if required:
+
+### 29c) Provide descriptions, license plate and/or identification numbers of vehicles used for intersite transportation, if required:
+
+### 29d) Provide descriptions, license plate and/or identification numbers of vehicles used for ship-to-shore transportation, if required
+
+### 30a) Is fuel cache needed?
+
+No.
+
+### 30b) Provide specific location(s) of fuel caches:
+
+NA
+
+### 31) Attach Safety Plan if required. Is Safety Plan attached?
+
+No safty plan.
+
+
+# Work and Living Accommodations
+
+### 32) Specifically describe onsite work and/or living accommodations, including spike camps:
+
+### 33) Specifically describe on or offsite hazardous material storage or other on or offsite material storage space:
