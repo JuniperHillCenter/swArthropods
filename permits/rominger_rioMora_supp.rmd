@@ -14,6 +14,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 We will establish 5 grassland and 2 woodland plots within the polygon shown in Figure X. These plots will be established by generating a random set of candidate sites and then rejecting those sites that are abnormal (e.g. coincide with prairie dog or harvester ant mounds) or are sensitive from a management perspective. The sensitivity of candidate sites will be discussed with Refuge staff.
 
+```{r}
+library(ggmap)
+library(evaluate)
+evaluate("qmap('L69 3GP', zoom = 16, maptype = 'satellite')")
+```
+
 ### 15) Identify species or habitats being studied:
 
 All arthropod species will be considered.  We will focus primarily on grassland habitat, but include a small number of woodland plots for comparison (see map in section 14)
