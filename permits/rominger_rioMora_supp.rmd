@@ -1,28 +1,81 @@
 ---
 title: 'Permit application for "Grassland arthropods across gradients: monitoring biodiversity and testing theory"'
-author: "Andrew Rominger"
+author: "PI: Andrew Rominger"
 output: pdf_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, echo=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+library(ggmap)
+library(ggplot2)
+library(broom)
+library(sp)
+library(rgdal)
 ```
 
 ### 13) Describe project by specifically identifying timing, frequency, and how the project is expected to proceed:
 
+We propose to collect taxonomic, genetic, and ecological data on athropod communities at the Rio Mora National Wildlife Refuge (RMNWF). We will focus primarily on grassland arhtropods as part of a larger sience and monitoring project throughout the state of New Mexico.  We are interested in both establishing a monitoring program for arthropods (of which summer 2018 will be the pilot season) and testing specific hypotheses (detailed in section 16) relating to how arthropod biodiversity responds to gradients in climate, landuse, and environmental heterogeneity as measured by plant and soil diversity. RMNWF is one of our more northerly sampling locations and represents natural land restored and/or rested from moderate agricultural use.
+
+If granted permission to opperate on RMNWF, we will establish our sampling plots (discussed in section 14) by 15 May 2018.  Arthropod, plant, and soil sampling will proceed from then until 1 October 2018.  Sampling will occur in 4 discrete campaigns (each 1 week long) during that period.  Below we describe sampling the arthropods, plants, and soils. Figure \ref{fig:layout} shows layout of sampling methods at each plot.
+
+
+
+**Arthropod sampling techniques** during each of the 4 campaigns will consist of 4 methods:
+
+- Malaise trap: intercepts crawling and flying arthropods and collects them into a container of ethonal; 1 trap will be left out for 1 week
+- Pitfall trap: intercepts crawling arthropods and collects them into a container of propylene glycol; 4 traps will be left out for 1 week.
+- Burlase trap: one soil core is taken at the sampling plot and transported off site where it is placed in a funnel with a lightsorce above, which forces soil athropods move downward, fall out of the core, and to collect in a container of ethonal; the soil core is taken on the same day that the Malaise and pitfall traps are removed from the field.  Soil cores will be collected with a XXXXX
+- Sweep and ariel netting: 2 researchers use nets to collect arthropods from the air and vegetation over a circular area of 15 m radius and during a conserted sampling duration of 7 minutes; netting occurs on the same day that Malaise and pitfall traps are removed.
+
+Samples will be transported offsite and emediately processed. Specimens will be removed from the fluid into which they were collected and transfered to 95% ethanol to preserve their DNA. Vials containing specimens in ethanol will be labeled and databased using Darwin Core standards (CITE)
+
+**Plant sampling** during each of the 4 campaigns will consist of recording the the identity of each plant found rooted within each 5 cm $\times$ 5 cm cell of a 2 m $\times$ 2 m grid. Plant sampling will take place on the same day Malaise and pitfall traps are deloyed in the field.  A tissue sample of each plant species at each sampling plot will be collected for DNA extraction and genetic analysis.
+
+**Soil sampling** during each of the 4 campaigns will make use of the same soil core used in the Burlase trap.  We will quantify 4 soil characteristics:
+
+- Soil moisture will be measured by weighing soil cores before placing them in the Berlase traps (which will partially dry them) and after fully drying them.
+- Soil texture will be measued using standard column experiments (CITE).
+- Soil chemical properties (total C, N, P) will be outsourced to Colorado State University.
+- Soil microbial community will be measured by sequencing a small sample of each soil core using universal microbial primers in an Illumina HiSeq.
+
+
 ### 14) Specifically identify location(s) and/or attach a map for the project:
 
-We will establish 5 grassland and 2 woodland plots within the polygon shown in Figure X. These plots will be established by generating a random set of candidate sites and then rejecting those sites that are abnormal (e.g. coincide with prairie dog or harvester ant mounds) or are sensitive from a management perspective. The sensitivity of candidate sites will be discussed with Refuge staff.
+We will establish 5 grassland and 2 woodland plots all at least 500 m distant from each other, and all within the polygon shown in Figure \ref{fig:map}. These plots will be established by generating a random set of candidate sites and then rejecting candiate sites that are abnormal (e.g. coincide with prairie dog or harvester ant mounds) or are sensitive from a management perspective. The sensitivity of candidate sites will be discussed with Refuge staff.  Candidate site rejection will proceed until 7 final plots have been selected.
 
-```{r}
-library(ggmap)
-library(evaluate)
-evaluate("qmap('L69 3GP', zoom = 16, maptype = 'satellite')")
+```{r, include=FALSE, cache=TRUE}
+polyCol <- hsv(0.55, 0.6, 0.8)
+sampCol <- 'white'
+
+rioMoraLoc <- c(lon = -105.067623, lat = 35.843262)
+rioMoraMap <- get_map(rioMoraLoc, zoom = 13, maptype = 'satellite', messaging = FALSE)
+
+rioMoraPoly <- tidy(readOGR('rio_mora_refuge.kml', 'rio_mora_refuge.kml'))
+rioMoraSamp <- tidy(readOGR('rio_mora.kml', 'rio_mora.kml'))
+rioMoraAll <- rbind(cbind(rioMoraPoly, poly = 'Refuge boundary'), cbind(rioMoraSamp, poly = 'Sampling area'))
+rioMoraAll <- rioMoraAll[!rioMoraAll$hole, ]
 ```
+
+```{r, echo=FALSE, cache=TRUE, fig.width=3, fig.height=3, fig.align='center', fig.cap='\\label{fig:map}Map of the Refuge boundary and proposed sampling area'}
+ggmap(rioMoraMap) + 
+    geom_polygon(data = rioMoraAll, 
+                 aes(long, lat, fill = poly, colour = poly),
+                 alpha = 0.3) +
+    theme(axis.text = element_text(size = 0), axis.ticks = element_line(color = 'transparent', size = 0), 
+          axis.title = element_text(size = 0),
+          legend.position = c(0.825, 0.9), legend.title = element_blank(), 
+          legend.background = element_rect(fill = 'transparent'), legend.key = element_rect(fill = 'transparent'),
+          legend.text = element_text(color = c('white')), 
+          plot.margin = margin(0, 0, 0, 0, 'pt')) + 
+    scale_fill_manual(values=c(polyCol, sampCol)) + scale_color_manual(values=c(polyCol, sampCol))
+```
+
 
 ### 15) Identify species or habitats being studied:
 
-All arthropod species will be considered.  We will focus primarily on grassland habitat, but include a small number of woodland plots for comparison (see map in section 14)
+All arthropod species will be considered.  We will focus primarily on grassland habitat, but include a small number of woodland plots for comparison (see Fig. \ref{fig:map}).
 
 ### 16) Purpose/hypothesis:
 
@@ -45,6 +98,10 @@ The Juniper Hill Center (<http://juniperhillcenter.org>)
 
 ### 22) Generally identify the anticipated timeline for analysis, write-up and publication:
 
+For the first pilot year we will produce 
+
+After each year's field sampling is completed, genetic data will be generated and analyzed within six months; a report of these results will be presented 
+
 ### 23) For research involving animals, attach an Assurance of Animal Care Form or an approval from an Institutional Animal Care and Use Committee? Is a form or approval attached?
 
 No form, not working with vertebrates.
@@ -53,11 +110,22 @@ No form, not working with vertebrates.
 
 ### 24a) List and attach copies of any **licenses** you have for equipment operation (i.e., aviation or commercial boats), pesticide applications, transporters) or others if required:
 
+None.
+
+
 ### 24b) List and attach copies of any **insurance** you have (i.e general liability, flight/grounding, contaminants, medical evacuation, or others if required:
+
+Personal insurance through United Healthcare for both PI Andrew Rominger and subpermittee Linden Schneider.
+
 
 ### 24c) List and attach copies of any **certifications** you have, such as rat free, hull inspections, CPR/First Aid, or others if required:
 
+None.
+
+
 ### 24d) List and attach copies of any other Federal, State, or Tribal **permits** if required:
+
+None.
 
 # Logistics and Transportation
 
@@ -73,11 +141,22 @@ NA
 
 ### 27a) Provide details and schedule for the installation of instrumentation:
 
+Malaise traps and pitfall traps are proposed to be installed by 15 May 2018.  We will insure that sensitive areas are not damaged by installing this equipment.
+
 ### 27b) Provide details and schedule for the removal of instrumentation:
+
+Equipment will be removed by 1 October 2018
+
 
 ### 27c) If instrumentation is permanent, describe need:
 
+We request that a single rebar stake remane in place to mark the location of plots.
+
+
 ### 27d) If instrumentation requires a maintenance schedule, describe needs and schedule:
+
+Maintenance is preformed when data are collected.
+
 
 ### 27e) Provide a data collection schedule:
 
