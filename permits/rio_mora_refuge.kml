@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>rio_mora_refuge.kml</name>
+	<Schema name="PADUS1_4Fee_Easements_NM" id="S_PADUS1_4Fee_Easements_NM_SSSSSSSSSSSSSSSSSSSSSSISISSSSSSSSSSSSSDDD">
+		<SimpleField type="string" name="Category"><displayName>&lt;b&gt;Category&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="d_Category"><displayName>&lt;b&gt;d_Category&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Own_Type"><displayName>&lt;b&gt;Own_Type&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="d_Own_Type"><displayName>&lt;b&gt;d_Own_Type&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Own_Name"><displayName>&lt;b&gt;Own_Name&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="d_Own_Name"><displayName>&lt;b&gt;d_Own_Name&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Loc_Own"><displayName>&lt;b&gt;Loc_Own&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Mang_Type"><displayName>&lt;b&gt;Mang_Type&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="d_Mang_Typ"><displayName>&lt;b&gt;d_Mang_Typ&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Mang_Name"><displayName>&lt;b&gt;Mang_Name&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="d_Mang_Nam"><displayName>&lt;b&gt;d_Mang_Nam&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Loc_Mang"><displayName>&lt;b&gt;Loc_Mang&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Des_Tp"><displayName>&lt;b&gt;Des_Tp&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="d_Des_Tp"><displayName>&lt;b&gt;d_Des_Tp&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Loc_Ds"><displayName>&lt;b&gt;Loc_Ds&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Unit_Nm"><displayName>&lt;b&gt;Unit_Nm&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Loc_Nm"><displayName>&lt;b&gt;Loc_Nm&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="State_Nm"><displayName>&lt;b&gt;State_Nm&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="d_State_Nm"><displayName>&lt;b&gt;d_State_Nm&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Agg_Src"><displayName>&lt;b&gt;Agg_Src&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="GIS_Src"><displayName>&lt;b&gt;GIS_Src&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Src_Date"><displayName>&lt;b&gt;Src_Date&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="GIS_Acres"><displayName>&lt;b&gt;GIS_Acres&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Source_PAI"><displayName>&lt;b&gt;Source_PAI&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="WDPA_Cd"><displayName>&lt;b&gt;WDPA_Cd&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Access"><displayName>&lt;b&gt;Access&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="d_Access"><displayName>&lt;b&gt;d_Access&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Access_Src"><displayName>&lt;b&gt;Access_Src&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="GAP_Sts"><displayName>&lt;b&gt;GAP_Sts&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="d_GAP_Sts"><displayName>&lt;b&gt;d_GAP_Sts&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="GAPCdSrc"><displayName>&lt;b&gt;GAPCdSrc&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="GAPCdDt"><displayName>&lt;b&gt;GAPCdDt&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="IUCN_Cat"><displayName>&lt;b&gt;IUCN_Cat&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="d_IUCN_Cat"><displayName>&lt;b&gt;d_IUCN_Cat&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="IUCNCtSrc"><displayName>&lt;b&gt;IUCNCtSrc&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="IUCNCtDt"><displayName>&lt;b&gt;IUCNCtDt&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Date_Est"><displayName>&lt;b&gt;Date_Est&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Comments"><displayName>&lt;b&gt;Comments&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="SHAPE_Leng"><displayName>&lt;b&gt;SHAPE_Leng&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Shape_Le_1"><displayName>&lt;b&gt;Shape_Le_1&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Shape_Area"><displayName>&lt;b&gt;Shape_Area&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="falseColor3">
+		<IconStyle>
+			<color>ffededed</color>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Category</b></td><td>$[PADUS1_4Fee_Easements_NM/Category]</td></tr>
+  <tr><td><b>d_Category</b></td><td>$[PADUS1_4Fee_Easements_NM/d_Category]</td></tr>
+  <tr><td><b>Own_Type</b></td><td>$[PADUS1_4Fee_Easements_NM/Own_Type]</td></tr>
+  <tr><td><b>d_Own_Type</b></td><td>$[PADUS1_4Fee_Easements_NM/d_Own_Type]</td></tr>
+  <tr><td><b>Own_Name</b></td><td>$[PADUS1_4Fee_Easements_NM/Own_Name]</td></tr>
+  <tr><td><b>d_Own_Name</b></td><td>$[PADUS1_4Fee_Easements_NM/d_Own_Name]</td></tr>
+  <tr><td><b>Loc_Own</b></td><td>$[PADUS1_4Fee_Easements_NM/Loc_Own]</td></tr>
+  <tr><td><b>Mang_Type</b></td><td>$[PADUS1_4Fee_Easements_NM/Mang_Type]</td></tr>
+  <tr><td><b>d_Mang_Typ</b></td><td>$[PADUS1_4Fee_Easements_NM/d_Mang_Typ]</td></tr>
+  <tr><td><b>Mang_Name</b></td><td>$[PADUS1_4Fee_Easements_NM/Mang_Name]</td></tr>
+  <tr><td><b>d_Mang_Nam</b></td><td>$[PADUS1_4Fee_Easements_NM/d_Mang_Nam]</td></tr>
+  <tr><td><b>Loc_Mang</b></td><td>$[PADUS1_4Fee_Easements_NM/Loc_Mang]</td></tr>
+  <tr><td><b>Des_Tp</b></td><td>$[PADUS1_4Fee_Easements_NM/Des_Tp]</td></tr>
+  <tr><td><b>d_Des_Tp</b></td><td>$[PADUS1_4Fee_Easements_NM/d_Des_Tp]</td></tr>
+  <tr><td><b>Loc_Ds</b></td><td>$[PADUS1_4Fee_Easements_NM/Loc_Ds]</td></tr>
+  <tr><td><b>Unit_Nm</b></td><td>$[PADUS1_4Fee_Easements_NM/Unit_Nm]</td></tr>
+  <tr><td><b>Loc_Nm</b></td><td>$[PADUS1_4Fee_Easements_NM/Loc_Nm]</td></tr>
+  <tr><td><b>State_Nm</b></td><td>$[PADUS1_4Fee_Easements_NM/State_Nm]</td></tr>
+  <tr><td><b>d_State_Nm</b></td><td>$[PADUS1_4Fee_Easements_NM/d_State_Nm]</td></tr>
+  <tr><td><b>Agg_Src</b></td><td>$[PADUS1_4Fee_Easements_NM/Agg_Src]</td></tr>
+  <tr><td><b>GIS_Src</b></td><td>$[PADUS1_4Fee_Easements_NM/GIS_Src]</td></tr>
+  <tr><td><b>Src_Date</b></td><td>$[PADUS1_4Fee_Easements_NM/Src_Date]</td></tr>
+  <tr><td><b>GIS_Acres</b></td><td>$[PADUS1_4Fee_Easements_NM/GIS_Acres]</td></tr>
+  <tr><td><b>Source_PAI</b></td><td>$[PADUS1_4Fee_Easements_NM/Source_PAI]</td></tr>
+  <tr><td><b>WDPA_Cd</b></td><td>$[PADUS1_4Fee_Easements_NM/WDPA_Cd]</td></tr>
+  <tr><td><b>Access</b></td><td>$[PADUS1_4Fee_Easements_NM/Access]</td></tr>
+  <tr><td><b>d_Access</b></td><td>$[PADUS1_4Fee_Easements_NM/d_Access]</td></tr>
+  <tr><td><b>Access_Src</b></td><td>$[PADUS1_4Fee_Easements_NM/Access_Src]</td></tr>
+  <tr><td><b>GAP_Sts</b></td><td>$[PADUS1_4Fee_Easements_NM/GAP_Sts]</td></tr>
+  <tr><td><b>d_GAP_Sts</b></td><td>$[PADUS1_4Fee_Easements_NM/d_GAP_Sts]</td></tr>
+  <tr><td><b>GAPCdSrc</b></td><td>$[PADUS1_4Fee_Easements_NM/GAPCdSrc]</td></tr>
+  <tr><td><b>GAPCdDt</b></td><td>$[PADUS1_4Fee_Easements_NM/GAPCdDt]</td></tr>
+  <tr><td><b>IUCN_Cat</b></td><td>$[PADUS1_4Fee_Easements_NM/IUCN_Cat]</td></tr>
+  <tr><td><b>d_IUCN_Cat</b></td><td>$[PADUS1_4Fee_Easements_NM/d_IUCN_Cat]</td></tr>
+  <tr><td><b>IUCNCtSrc</b></td><td>$[PADUS1_4Fee_Easements_NM/IUCNCtSrc]</td></tr>
+  <tr><td><b>IUCNCtDt</b></td><td>$[PADUS1_4Fee_Easements_NM/IUCNCtDt]</td></tr>
+  <tr><td><b>Date_Est</b></td><td>$[PADUS1_4Fee_Easements_NM/Date_Est]</td></tr>
+  <tr><td><b>Comments</b></td><td>$[PADUS1_4Fee_Easements_NM/Comments]</td></tr>
+  <tr><td><b>SHAPE_Leng</b></td><td>$[PADUS1_4Fee_Easements_NM/SHAPE_Leng]</td></tr>
+  <tr><td><b>Shape_Le_1</b></td><td>$[PADUS1_4Fee_Easements_NM/Shape_Le_1]</td></tr>
+  <tr><td><b>Shape_Area</b></td><td>$[PADUS1_4Fee_Easements_NM/Shape_Area]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>ffffaf3a</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4dff9d30</color>
+		</PolyStyle>
+	</Style>
+	<Style id="falseColor0">
+		<IconStyle>
+			<color>ffededed</color>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Category</b></td><td>$[PADUS1_4Fee_Easements_NM/Category]</td></tr>
+  <tr><td><b>d_Category</b></td><td>$[PADUS1_4Fee_Easements_NM/d_Category]</td></tr>
+  <tr><td><b>Own_Type</b></td><td>$[PADUS1_4Fee_Easements_NM/Own_Type]</td></tr>
+  <tr><td><b>d_Own_Type</b></td><td>$[PADUS1_4Fee_Easements_NM/d_Own_Type]</td></tr>
+  <tr><td><b>Own_Name</b></td><td>$[PADUS1_4Fee_Easements_NM/Own_Name]</td></tr>
+  <tr><td><b>d_Own_Name</b></td><td>$[PADUS1_4Fee_Easements_NM/d_Own_Name]</td></tr>
+  <tr><td><b>Loc_Own</b></td><td>$[PADUS1_4Fee_Easements_NM/Loc_Own]</td></tr>
+  <tr><td><b>Mang_Type</b></td><td>$[PADUS1_4Fee_Easements_NM/Mang_Type]</td></tr>
+  <tr><td><b>d_Mang_Typ</b></td><td>$[PADUS1_4Fee_Easements_NM/d_Mang_Typ]</td></tr>
+  <tr><td><b>Mang_Name</b></td><td>$[PADUS1_4Fee_Easements_NM/Mang_Name]</td></tr>
+  <tr><td><b>d_Mang_Nam</b></td><td>$[PADUS1_4Fee_Easements_NM/d_Mang_Nam]</td></tr>
+  <tr><td><b>Loc_Mang</b></td><td>$[PADUS1_4Fee_Easements_NM/Loc_Mang]</td></tr>
+  <tr><td><b>Des_Tp</b></td><td>$[PADUS1_4Fee_Easements_NM/Des_Tp]</td></tr>
+  <tr><td><b>d_Des_Tp</b></td><td>$[PADUS1_4Fee_Easements_NM/d_Des_Tp]</td></tr>
+  <tr><td><b>Loc_Ds</b></td><td>$[PADUS1_4Fee_Easements_NM/Loc_Ds]</td></tr>
+  <tr><td><b>Unit_Nm</b></td><td>$[PADUS1_4Fee_Easements_NM/Unit_Nm]</td></tr>
+  <tr><td><b>Loc_Nm</b></td><td>$[PADUS1_4Fee_Easements_NM/Loc_Nm]</td></tr>
+  <tr><td><b>State_Nm</b></td><td>$[PADUS1_4Fee_Easements_NM/State_Nm]</td></tr>
+  <tr><td><b>d_State_Nm</b></td><td>$[PADUS1_4Fee_Easements_NM/d_State_Nm]</td></tr>
+  <tr><td><b>Agg_Src</b></td><td>$[PADUS1_4Fee_Easements_NM/Agg_Src]</td></tr>
+  <tr><td><b>GIS_Src</b></td><td>$[PADUS1_4Fee_Easements_NM/GIS_Src]</td></tr>
+  <tr><td><b>Src_Date</b></td><td>$[PADUS1_4Fee_Easements_NM/Src_Date]</td></tr>
+  <tr><td><b>GIS_Acres</b></td><td>$[PADUS1_4Fee_Easements_NM/GIS_Acres]</td></tr>
+  <tr><td><b>Source_PAI</b></td><td>$[PADUS1_4Fee_Easements_NM/Source_PAI]</td></tr>
+  <tr><td><b>WDPA_Cd</b></td><td>$[PADUS1_4Fee_Easements_NM/WDPA_Cd]</td></tr>
+  <tr><td><b>Access</b></td><td>$[PADUS1_4Fee_Easements_NM/Access]</td></tr>
+  <tr><td><b>d_Access</b></td><td>$[PADUS1_4Fee_Easements_NM/d_Access]</td></tr>
+  <tr><td><b>Access_Src</b></td><td>$[PADUS1_4Fee_Easements_NM/Access_Src]</td></tr>
+  <tr><td><b>GAP_Sts</b></td><td>$[PADUS1_4Fee_Easements_NM/GAP_Sts]</td></tr>
+  <tr><td><b>d_GAP_Sts</b></td><td>$[PADUS1_4Fee_Easements_NM/d_GAP_Sts]</td></tr>
+  <tr><td><b>GAPCdSrc</b></td><td>$[PADUS1_4Fee_Easements_NM/GAPCdSrc]</td></tr>
+  <tr><td><b>GAPCdDt</b></td><td>$[PADUS1_4Fee_Easements_NM/GAPCdDt]</td></tr>
+  <tr><td><b>IUCN_Cat</b></td><td>$[PADUS1_4Fee_Easements_NM/IUCN_Cat]</td></tr>
+  <tr><td><b>d_IUCN_Cat</b></td><td>$[PADUS1_4Fee_Easements_NM/d_IUCN_Cat]</td></tr>
+  <tr><td><b>IUCNCtSrc</b></td><td>$[PADUS1_4Fee_Easements_NM/IUCNCtSrc]</td></tr>
+  <tr><td><b>IUCNCtDt</b></td><td>$[PADUS1_4Fee_Easements_NM/IUCNCtDt]</td></tr>
+  <tr><td><b>Date_Est</b></td><td>$[PADUS1_4Fee_Easements_NM/Date_Est]</td></tr>
+  <tr><td><b>Comments</b></td><td>$[PADUS1_4Fee_Easements_NM/Comments]</td></tr>
+  <tr><td><b>SHAPE_Leng</b></td><td>$[PADUS1_4Fee_Easements_NM/SHAPE_Leng]</td></tr>
+  <tr><td><b>Shape_Le_1</b></td><td>$[PADUS1_4Fee_Easements_NM/Shape_Le_1]</td></tr>
+  <tr><td><b>Shape_Area</b></td><td>$[PADUS1_4Fee_Easements_NM/Shape_Area]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+			<color>ffffaf3a</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4dff9d30</color>
+		</PolyStyle>
+		<gx:IconStackStyle>
+		</gx:IconStackStyle>
+	</Style>
+	<StyleMap id="falseColor2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#falseColor3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#falseColor0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>rio_mora_refuge</name>
+		<open>1</open>
+		<styleUrl>#falseColor2</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#S_PADUS1_4Fee_Easements_NM_SSSSSSSSSSSSSSSSSSSSSSISISSSSSSSSSSSSSDDD">
+				<SimpleData name="Category">Fee</SimpleData>
+				<SimpleData name="d_Category">Fee</SimpleData>
+				<SimpleData name="Own_Type">FED</SimpleData>
+				<SimpleData name="d_Own_Type">Federal</SimpleData>
+				<SimpleData name="Own_Name">FWS</SimpleData>
+				<SimpleData name="d_Own_Name">U.S. Fish &amp; Wildlife Service</SimpleData>
+				<SimpleData name="Loc_Own">O</SimpleData>
+				<SimpleData name="Mang_Type">FED</SimpleData>
+				<SimpleData name="d_Mang_Typ">Federal</SimpleData>
+				<SimpleData name="Mang_Name">FWS</SimpleData>
+				<SimpleData name="d_Mang_Nam">U.S. Fish &amp; Wildlife Service</SimpleData>
+				<SimpleData name="Loc_Mang">RIO MORA NATIONAL WILDLIFE REFUGE AND CONSERVATION AREA</SimpleData>
+				<SimpleData name="Des_Tp">NWR</SimpleData>
+				<SimpleData name="d_Des_Tp">National Wildlife Refuge</SimpleData>
+				<SimpleData name="Loc_Ds">NWR</SimpleData>
+				<SimpleData name="Unit_Nm">Rio Mora National Wildlife Refuge And Conservation Area</SimpleData>
+				<SimpleData name="Loc_Nm">RIO MORA NATIONAL WILDLIFE REFUGE AND CONSERVATION AREA</SimpleData>
+				<SimpleData name="State_Nm">NM</SimpleData>
+				<SimpleData name="d_State_Nm">New Mexico</SimpleData>
+				<SimpleData name="Agg_Src">GAP_PADUS1_4Fee_FWS_FWSInterest_Simplified_preprocess</SimpleData>
+				<SimpleData name="GIS_Src">FWS_FWSInterest_Simplified.shp</SimpleData>
+				<SimpleData name="Src_Date">2015/05/01</SimpleData>
+				<SimpleData name="GIS_Acres">4461</SimpleData>
+				<SimpleData name="Source_PAI">RIO</SimpleData>
+				<SimpleData name="WDPA_Cd">555609346</SimpleData>
+				<SimpleData name="Access">RA</SimpleData>
+				<SimpleData name="d_Access">Restricted Access</SimpleData>
+				<SimpleData name="Access_Src">GAP - Default</SimpleData>
+				<SimpleData name="GAP_Sts">2</SimpleData>
+				<SimpleData name="d_GAP_Sts">2 - managed for biodiversity - disturbance events suppressed</SimpleData>
+				<SimpleData name="GAPCdSrc">GAP - Default</SimpleData>
+				<SimpleData name="GAPCdDt">2015</SimpleData>
+				<SimpleData name="IUCN_Cat">IV</SimpleData>
+				<SimpleData name="d_IUCN_Cat">IV: Habitat / species management</SimpleData>
+				<SimpleData name="IUCNCtSrc">GAP - Default</SimpleData>
+				<SimpleData name="IUCNCtDt">2015</SimpleData>
+				<SimpleData name="Date_Est"></SimpleData>
+				<SimpleData name="Comments"></SimpleData>
+				<SimpleData name="SHAPE_Leng">28829.7</SimpleData>
+				<SimpleData name="Shape_Le_1">28829.7</SimpleData>
+				<SimpleData name="Shape_Area">1.80536e+07</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-105.0867571069738,35.8686070968994,0 -105.0887247659445,35.86610619760798,0 -105.0898914379118,35.8665872562987,0 -105.0909376486125,35.8673601867103,0 -105.0948513556679,35.86427945009292,0 -105.0946697029889,35.86410217889992,0 -105.0939854611036,35.86275300301939,0 -105.0900737680702,35.86127669829927,0 -105.0979418874036,35.85152219385905,0 -105.0996335878167,35.85057019734143,0 -105.1029404806332,35.84870790971896,0 -105.1013209924548,35.84585476981526,0 -105.1006966098197,35.84382705210628,0 -105.1001310083556,35.84056099069492,0 -105.0989477812374,35.83956937942342,0 -105.096670051799,35.83765067791251,0 -105.096361017531,35.8374035281672,0 -105.0961696952406,35.83726255363727,0 -105.096070471627,35.83719281707279,0 -105.0956952613049,35.83700472397106,0 -105.095365831566,35.83685373133526,0 -105.0946490104876,35.83653892755966,0 -105.0868777798577,35.83302362729849,0 -105.0805252132429,35.83008254763804,0 -105.0801490515118,35.82994527888792,0 -105.0797386424469,35.82979385962295,0 -105.0793432597463,35.82965934545587,0 -105.0789041529254,35.82951587560131,0 -105.075982135489,35.8286329491679,0 -105.073850156831,35.82799224657305,0 -105.0735237542551,35.82792285388881,0 -105.0732337353551,35.82782636440588,0 -105.0730046876448,35.82774326907423,0 -105.0663462300998,35.82503814904197,0 -105.0652803205423,35.82471771485331,0 -105.0646313195754,35.82446130018661,0 -105.0642482817048,35.82431924714568,0 -105.0639626952456,35.82421803903431,0 -105.0633837056723,35.8240266523345,0 -105.0630907548811,35.82393357796385,0 -105.0626611974537,35.82380774196434,0 -105.0543127544543,35.82148759780719,0 -105.0533498143978,35.82069115640915,0 -105.0532794908954,35.82065390379744,0 -105.0521349638095,35.81945085482472,0 -105.0474771238609,35.82733286103547,0 -105.0468363047849,35.82889235188868,0 -105.0451864192614,35.83701276217197,0 -105.0437136909351,35.83526432743197,0 -105.0425363088786,35.83465630295233,0 -105.0419390045634,35.83527363305733,0 -105.0416095393306,35.83577522657448,0 -105.0408946525803,35.83604082742592,0 -105.0412554493619,35.83715462706168,0 -105.0412675480863,35.83810532073674,0 -105.0396017809133,35.83903168860412,0 -105.0403570912367,35.8392529060958,0 -105.0405336686709,35.83968400218791,0 -105.0405245192277,35.84027771258291,0 -105.0373995931437,35.84059539740309,0 -105.0363858016451,35.84002612563835,0 -105.0336760678887,35.83932302764697,0 -105.0325903741296,35.83854300070381,0 -105.03169671038,35.83766908933174,0 -105.0313904435108,35.83707912328856,0 -105.0313100722101,35.8341401143577,0 -105.0317804756168,35.83137174674335,0 -105.0319720154314,35.83114560167716,0 -105.0301730069489,35.82982160907996,0 -105.0290693687715,35.82856816115039,0 -105.0283132171505,35.82811246256097,0 -105.0274655575794,35.82776463794993,0 -105.0260634957444,35.82772822606702,0 -105.026251055176,35.83889394008021,0 -105.0400957710425,35.84628216067269,0 -105.0430305456956,35.84784884213133,0 -105.0445830370571,35.84868630617201,0 -105.049712492214,35.85142827432402,0 -105.0513602213445,35.85232167921652,0 -105.0556792164865,35.85473887496748,0 -105.058711757918,35.8564641640622,0 -105.0623122527941,35.85850599932274,0 -105.071109876057,35.86323992626391,0 -105.0713308392799,35.86331445641049,0 -105.0720096082805,35.86347705706719,0 -105.0722474629178,35.86324168779527,0 -105.0723648642735,35.86257961741148,0 -105.0723647545767,35.86257787722168,0 -105.0735886715349,35.86370432117427,0 -105.0743818202284,35.86453111795424,0 -105.0748244433419,35.86466491519836,0 -105.0754359701993,35.86532310523903,0 -105.0780172789703,35.86646637699518,0 -105.0798198182255,35.86615744323764,0 -105.0805213618016,35.8663786946874,0 -105.0806349066124,35.86680012041148,0 -105.080549351215,35.86746458640359,0 -105.0811002184859,35.86811144100307,0 -105.0810081648917,35.86854814732661,0 -105.0811623204874,35.86869834063049,0 -105.0820784720786,35.86731018909493,0 -105.0838973974654,35.86787336995867,0 -105.0867571069738,35.8686070968994,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+			<innerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-105.0596725720794,35.85246449681303,0 -105.0597908039787,35.84996571606424,0 -105.0645847011969,35.8463463155983,0 -105.0645199672553,35.84657840315967,0 -105.0650421217109,35.84585264577924,0 -105.0655977955221,35.84508029978296,0 -105.0654521093235,35.84714658359281,0 -105.0677080375881,35.84775683423523,0 -105.0687334732391,35.84818943895276,0 -105.0686980506409,35.84887050091211,0 -105.0689238457341,35.84907031558048,0 -105.0688257467404,35.84958643484676,0 -105.0685902777241,35.8503328987991,0 -105.0682846649809,35.85072688412897,0 -105.0681524233318,35.85083546164447,0 -105.0678335617514,35.85088614046298,0 -105.068716621564,35.851930177943,0 -105.0688652658402,35.85233998138491,0 -105.0688794395516,35.85246987802735,0 -105.069103843205,35.85301529480977,0 -105.0700648814844,35.85245249911368,0 -105.0707156440141,35.85367854413998,0 -105.0697348922166,35.8545400520651,0 -105.067839680465,35.85504772266047,0 -105.0674084333497,35.8556363374204,0 -105.0634773098745,35.85501954413115,0 -105.0620990171625,35.85510590627579,0 -105.0596725720794,35.85246449681303,0 
+					</coordinates>
+				</LinearRing>
+				<LinearRing>
+					<coordinates>
+						-105.0761198960296,35.84741687325179,0 -105.0761092574365,35.8473459742679,0 -105.0758129025502,35.84739561811806,0 -105.0754169529472,35.84756238974045,0 -105.0751559192901,35.84786628924529,0 -105.0750647805642,35.84688475500312,0 -105.0746195652477,35.84690527158592,0 -105.0743886531341,35.84441814398581,0 -105.0748271698374,35.84432557302715,0 -105.0760812834681,35.8441321179882,0 -105.0760183804546,35.84459286280658,0 -105.0761665735091,35.84501552389327,0 -105.0762349889261,35.84535715407221,0 -105.0767680544725,35.84536262753258,0 -105.0767588520581,35.84584414726415,0 -105.0762328832702,35.84586069328893,0 -105.0763064765168,35.8464896918423,0 -105.0764739585979,35.84647317131967,0 -105.0764757243622,35.84665241669045,0 -105.0763956090725,35.84666202227442,0 -105.0765060361519,35.84728088907639,0 -105.0766418656285,35.84760598980476,0 -105.0763453804434,35.84755249914842,0 -105.0763921936575,35.84790759025522,0 -105.0759160994917,35.84795147664306,0 -105.0758233356635,35.84764188484287,0 -105.0761198960296,35.84741687325179,0 
+					</coordinates>
+				</LinearRing>
+				<LinearRing>
+					<coordinates>
+						-105.0766983283771,35.84769986836373,0 -105.0772542245526,35.8480955806328,0 -105.0770629894844,35.84859803697498,0 -105.0765070904156,35.84820232218744,0 -105.0766983283771,35.84769986836373,0 
+					</coordinates>
+				</LinearRing>
+				<LinearRing>
+					<coordinates>
+						-105.0792972745395,35.84862976324911,0 -105.07981409509,35.84891228896333,0 -105.0796016645083,35.84913352261241,0 -105.0790917350905,35.84887546274294,0 -105.0792972745395,35.84862976324911,0 
+					</coordinates>
+				</LinearRing>
+				<LinearRing>
+					<coordinates>
+						-105.0821311796326,35.84859913978055,0 -105.0823632083576,35.84864451230304,0 -105.0822496526604,35.84903352473039,0 -105.0820100470913,35.84897730777266,0 -105.0821311796326,35.84859913978055,0 
+					</coordinates>
+				</LinearRing>
+			</innerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
