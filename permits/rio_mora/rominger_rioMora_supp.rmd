@@ -2,8 +2,8 @@
 title: 'Permit application for "Grassland arthropods across gradients: monitoring biodiversity and testing theory"'
 author: "PI: Andrew Rominger"
 output: pdf_document
-bibliography: permits.bib
-csl: institute-of-mathematical-statistics.csl
+bibliography: ../permits.bib
+csl: ../institute-of-mathematical-statistics.csl
 ---
 
 ```{r setup, include=FALSE, echo=FALSE}
@@ -24,7 +24,7 @@ We propose to collect taxonomic, genetic, and ecological data on arthropod commu
 If granted permission to operate on RMNWF, we will establish our sampling plots (discussed in section 14) by 15 May 2018.  Arthropod, plant, and soil sampling will proceed from then until 1 October 2018.  Sampling will occur in 3 discrete campaigns (each 1 week long) during that period.  Below we describe sampling the arthropods, plants, and soils. Figure \ref{fig:layout} shows layout of sampling methods at each plot.
 
 ```{r, out.width='3in', fig.align='center', fig.cap='\\label{fig:layout}Aerial view of a sampling plot (not to scale). Numbers in soil cores indicate that only one soil core will be taken during each sampling campain, and the specific soil core taken will rotate clockwise around the edge of the Malaise trap. Plant survey quadrat will be randomly placed adjacent to the Malaise trap.'}
-include_graphics('fig_sampling_layout.pdf')
+include_graphics('../fig_sampling_layout.pdf')
 ```
 
 **Arthropod sampling techniques** during each of the 4 campaigns will consist of 4 methods:
