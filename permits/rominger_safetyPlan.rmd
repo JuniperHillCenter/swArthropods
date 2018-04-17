@@ -1,0 +1,53 @@
+---
+title: 'Safety plan for "Grassland arthropods across gradients: monitoring biodiversity and testing theory"'
+author: "PI: Andrew Rominger"
+output: pdf_document
+bibliography: permits.bib
+csl: institute-of-mathematical-statistics.csl
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Responsibilities of the Project Leader
+
+These responsibilities are taken directly from US Fish and Wildlife Form `240 FW 1: Safety Program Management` *section H*. PI Rominger will be responsible to:
+
+1) Ensure that adequate training and equipment is available for field assistants to safely perform their job tasks
+2) Ensure adequate supervisory measures are in place to monitor field assistants to confirm they are conducting their work activities in a safe and healthy manner
+4) Monitor operations at work sites to detect any unsafe acts or conditions and take appropriate corrective actions
+5) Arrange for first aid, medical treatment, and transportation for medical treatment, when necessary
+6) Investigate and report accidents that result in or have the potential to cause injuries, illnesses, fatalities, or property damage
+7) Require field assistants to use safe and healthful work practices. Acknowledge those who demonstrate exemplary safety and health attitudes and work practices. Take appropriate measures, including personnel disciplinary actions, for those who do not follow safety and health requirements
+8) Ensure field assistants adhere to the safety and occupational health program
+10) Provide an atmosphere that allows field assistants to report safety and health concerns without interference, reprisal, or coercion
+13) Ensure that personnel whose duties may require occupational exposure to toxic chemicals; physical agents, such as noise, heat, vibrations; or biological hazards above established Permissible Exposure Limits or Threshold Limit Values participate in a Service-provided medical surveillance program (see 242 FW 4)
+
+
+## Safety equipment and training
+
+Following form `241 FW 3` all personnel in the field will carry with the following safety-related equipment:
+
+- compass
+- GPS unit
+- physical topo map
+- cellphone
+- walkie-talkie
+- first aid kit
+
+
+Following form `241 FW 3` all personnel in the field will make use of the following personal equipment to facilitate safety:
+
+- 40+ L backpack with proper weight distribution system
+- sturdy boots
+- long sleeves and pants
+- sunscreen
+- 4 L of water per person per day
+
+All personnel will be trained by the Project Leader in the proper use of equipment to ensure safety and healthy working conditions
+
+
+## Emergency and injury planning
+
+All personnel will be provided with an emergency plan including contact information for the Project Leader and Refuge staff, and the location of the designating meeting area (indicated on the physical map distributed to each field assistant and programmed into each GPS unit) in case of emergency or injury. Before embarking on fieldwork, personnel will be shown the emergency meeting area on the ground. Personnel in the field will always be in groups of at least two. Personnel will be instructed to use cellphones (where reception allows) and walkie-talkies to communicate about emergencies and injuries with each other, the Project Leader, and emergency personnel. In the event of emergency or injury, all personnel in the field will evacuate to the designating meeting area and seek further emergency or medical assistance from there.
