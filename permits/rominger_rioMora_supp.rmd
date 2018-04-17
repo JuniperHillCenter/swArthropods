@@ -2,6 +2,8 @@
 title: 'Permit application for "Grassland arthropods across gradients: monitoring biodiversity and testing theory"'
 author: "PI: Andrew Rominger"
 output: pdf_document
+bibliography: permits.bib
+csl: institute-of-mathematical-statistics.csl
 ---
 
 ```{r setup, include=FALSE, echo=FALSE}
@@ -29,10 +31,10 @@ include_graphics('fig_sampling_layout.pdf')
 
 1) Malaise trap: intercepts crawling and flying arthropods and collects them into a container of propylene glycol; 1 trap will be left out for 1 week
 2) Pitfall trap: intercepts crawling arthropods and collects them into a container of propylene glycol; 4 traps will be left out for 1 week.
-3) Burlase trap: one soil core is taken at the sampling plot and transported off site where it is placed in a funnel with a lightsorce above, which forces soil athropods move downward, fall out of the core, and to collect in a container of ethonal; the soil core is taken on the same day that the Malaise and pitfall traps are removed from the field.  Soil cores will be collected with a XXXXX
+3) Burlase trap: one soil core is taken at the sampling plot and transported off site where it is placed in a funnel with a lightsorce above, which forces soil athropods move downward, fall out of the core, and to collect in a container of ethonal; the soil core is taken on the same day that the Malaise and pitfall traps are removed from the field.  Soil cores of standard volumn will be collected with an AMS soil auger.
 4) Sweep and ariel netting: 2 researchers use nets to collect arthropods from the air and vegetation over a circular area of 15 m radius and during a conserted sampling duration of 7 minutes; netting occurs on the same day that Malaise and pitfall traps are removed.
 
-Samples will be transported offsite and emediately processed. Specimens will be removed from the fluid into which they were collected and transfered to 95% ethanol to preserve their DNA. Vials containing specimens in ethanol will be labeled and databased using Darwin Core standards (CITE).  Specimens will be sorted into orders and a subset will be furthered keyed out to species.  These fully keyed out specimens will be sequenced using a set of robust arthropod primers (CITE) on an Illumina HiSeq.  These voucher specimens will be deposited in the Museum of Southwestern Biology upon completion of the project.  All other specimens will be sacrificed to destructive genetic sampling technique that provides sequence data and abundance estimates for all species at extremely low cost (CITE).
+Samples will be transported offsite and emediately processed. Specimens will be removed from the fluid into which they were collected and transfered to 95% ethanol to preserve their DNA. Vials containing specimens in ethanol will be labeled and databased using Darwin Core standards [@wieczorek2012].  Specimens will be sorted into orders and a subset will be furthered keyed out to species.  These fully keyed out specimens will be sequenced using a set of robust, phylogenetically informative arthropod primers [@krehenwinkel2017] on an Illumina HiSeq.  These voucher specimens will be deposited in the Museum of Southwestern Biology upon completion of the project.  All other specimens will be sacrificed to destructive genetic sampling technique that provides sequence data and abundance estimates for all species at extremely low cost [@krehenwinkel2017].
 
 
 
@@ -41,9 +43,10 @@ Samples will be transported offsite and emediately processed. Specimens will be 
 **Soil sampling** during each of the 4 campaigns will make use of the same soil core used in the Burlase trap.  We will quantify 4 soil characteristics:
 
 1) Soil moisture will be measured by weighing soil cores before placing them in the Berlase traps (which will partially dry them) and after fully drying them.
-2) Soil texture will be measued using standard column experiments (CITE).
+1) Soil bulk density will be used to evaluate porosity.
+2) Soil texture will be measued using a hydrometer.
 3) Soil chemical properties (total C, N, P) will be outsourced to Colorado State University.
-4) Soil microbial community will be measured by sequencing a small sample (stored in 95% ethanol) of each soil core using universal microbial primers in an Illumina HiSeq.
+4) Soil microbial community will be measured by sequencing a small sample (stored in 95% ethanol) of each soil core using standard universal microbial primers (16S and ITS) in an Illumina HiSeq.
 
 
 ### 14) Specifically identify location(s) and/or attach a map for the project:
@@ -100,7 +103,7 @@ Our expected benefits include documenting the response of arthropod, plant, and 
 
 ### 18) Briefly describe project history and context of research/monitoring project:
 
-This is a new project and this year will be its pilot season.  Our new work falls within the context of other arhtropod research carried about by PI Rominger. The most relevant work (in terms of hypothese tested and scale of sampling) was funded by the National Science Foundation and occurred across public lands in the state of Hawaii resulting in three publications thus far (CITE).
+This is a new project and this year will be its pilot season.  Our new work falls within the context of other arhtropod research carried about by PI Rominger. The most relevant work (in terms of hypothese tested and scale of sampling) was funded by the National Science Foundation and occurred across public lands in the state of Hawaii resulting in three publications thus far [@rominger2015; @krehenwinkel2017; @romingerTREE].
 
 
 ### 19) Briefly describe project’s relationship to other research/monitoring projects either known of or conducted by the applicant:
@@ -121,7 +124,7 @@ Arthropod specimens will be collected from all plots using the methods described
 
 ### 21) List other cooperators and institutions involved in the project:
 
-The Juniper Hill Center (<http://juniperhillcenter.org>) will provide lab space for processing and storing specimens.  Collaborators at the University of California Berkeley will provide resources for genetic analyses.
+The Juniper Hill Center (<http://juniperhillcenter.org>) will provide lab space for processing and storing specimens.  Collaborators at the University of California Berkeley will lab space and materials  for genetic analyses.
 
 
 ### 22) Generally identify the anticipated timeline for analysis, write-up and publication:
@@ -260,3 +263,5 @@ Work will take place during daylight hours.  Food and water as specified in the 
 
 We will only use propylene glycol in the field, which is classified by the USDA as non-hazardous.  We will use ethanol (flammable and hazardous) offsite only. Ethanol will be stored only in small quantities and kept in tightly sealed contrainers in a well ventilated space.
 
+
+# References
