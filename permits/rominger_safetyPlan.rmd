@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Responsibilities of the Project Leader
 
-These responsibilities are taken directly from US Fish and Wildlife Form `240 FW 1: Safety Program Management` *section H*. PI Rominger will be responsible to:
+These responsibilities are taken directly from US Fish and Wildlife Form `240 FW 1: Safety Program Management` *section H*. PI Rominger, as Project Leader, will be responsible to:
 
 1) Ensure that adequate training and equipment is available for field assistants to safely perform their job tasks
 2) Ensure adequate supervisory measures are in place to monitor field assistants to confirm they are conducting their work activities in a safe and healthy manner
@@ -31,11 +31,12 @@ Following form `241 FW 3` all personnel in the field will carry with the followi
 
 - compass
 - GPS unit
-- physical topo map
+- printed topo map
 - cellphone
 - walkie-talkie
 - first aid kit
-
+- any prescribed medications
+- emergency contact information for the Project Leader, Refuge staff, and a personal emergency contact
 
 Following form `241 FW 3` all personnel in the field will make use of the following personal equipment to facilitate safety:
 
@@ -43,11 +44,13 @@ Following form `241 FW 3` all personnel in the field will make use of the follow
 - sturdy boots
 - long sleeves and pants
 - sunscreen
+- hat
 - 4 L of water per person per day
+- personal food
 
-All personnel will be trained by the Project Leader in the proper use of equipment to ensure safety and healthy working conditions
+All personnel will be trained by the Project Leader in the proper use of equipment to ensure safe and healthy working conditions.
 
 
 ## Emergency and injury planning
 
-All personnel will be provided with an emergency plan including contact information for the Project Leader and Refuge staff, and the location of the designating meeting area (indicated on the physical map distributed to each field assistant and programmed into each GPS unit) in case of emergency or injury. Before embarking on fieldwork, personnel will be shown the emergency meeting area on the ground. Personnel in the field will always be in groups of at least two. Personnel will be instructed to use cellphones (where reception allows) and walkie-talkies to communicate about emergencies and injuries with each other, the Project Leader, and emergency personnel. In the event of emergency or injury, all personnel in the field will evacuate to the designating meeting area and seek further emergency or medical assistance from there.
+All personnel will be provided with an emergency plan including contact information for the Project Leader and Refuge staff, and the location of the designating meeting area (indicated on the physical map distributed to each field assistant and programmed into each GPS unit) in case of emergency or injury. Before embarking on fieldwork, personnel will be shown the emergency meeting area on the ground. Personnel in the field will always be in groups of at least two. Personnel will be instructed to use cellphones (where reception allows) and walkie-talkies to communicate about emergencies and injuries with each other, the Project Leader, and emergency personnel. In the event of emergency or injury, all personnel in the field will evacuate to the designating meeting area and seek further emergency or medical assistance from there. In the event that communication is lost between group members for 60 minutes, the protocol will to meet back at the emergency meeting area.  

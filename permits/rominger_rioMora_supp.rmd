@@ -19,9 +19,9 @@ opts_chunk$set(echo = FALSE)
 
 ### 13) Describe project by specifically identifying timing, frequency, and how the project is expected to proceed:
 
-We propose to collect taxonomic, genetic, and ecological data on arthropod communities at the Rio Mora National Wildlife Refuge (RMNWF). We will focus primarily on grassland arthropods as part of a larger science and monitoring project throughout the state of New Mexico.  We are interested in both establishing a monitoring program for arthropods (of which summer 2018 will be the pilot season) and testing specific hypotheses (detailed in section 16) relating to how arthropod biodiversity responds to gradients in climate, land-use, and environmental heterogeneity as measured by plant and soil diversity. RMNWF is one of our more northerly sampling locations and represents natural land restored and/or rested from moderate agricultural use.
+We propose to collect taxonomic, genetic, and ecological data on arthropod communities at the Rio Mora National Wildlife Refuge (RMNWF). We will focus primarily on grassland arthropods as part of a larger science and monitoring project throughout the state of New Mexico, including other National Wildlife Refuges.  We are interested in both establishing a monitoring program for arthropods (of which summer 2018 will be the pilot season) and testing specific hypotheses (detailed in section 16) relating to how arthropod biodiversity responds to gradients in climate, land-use, and environmental heterogeneity as measured by plant and soil diversity. RMNWF is one of our more northerly sampling locations and represents natural land restored and/or rested from moderate agricultural use.
 
-If granted permission to operate on RMNWF, we will establish our sampling plots (discussed in section 14) by 15 May 2018.  Arthropod, plant, and soil sampling will proceed from then until 1 October 2018.  Sampling will occur in 4 discrete campaigns (each 1 week long) during that period.  Below we describe sampling the arthropods, plants, and soils. Figure \ref{fig:layout} shows layout of sampling methods at each plot.
+If granted permission to operate on RMNWF, we will establish our sampling plots (discussed in section 14) by 15 May 2018.  Arthropod, plant, and soil sampling will proceed from then until 1 October 2018.  Sampling will occur in 3 discrete campaigns (each 1 week long) during that period.  Below we describe sampling the arthropods, plants, and soils. Figure \ref{fig:layout} shows layout of sampling methods at each plot.
 
 ```{r, out.width='3in', fig.align='center', fig.cap='\\label{fig:layout}Aerial view of a sampling plot (not to scale). Numbers in soil cores indicate that only one soil core will be taken during each sampling campain, and the specific soil core taken will rotate clockwise around the edge of the Malaise trap. Plant survey quadrat will be randomly placed adjacent to the Malaise trap.'}
 include_graphics('fig_sampling_layout.pdf')
@@ -40,13 +40,24 @@ Samples will be transported offsite and immediately processed. Specimens will be
 
 **Plant sampling** during each of the 4 campaigns will consist of recording the the identity of each plant found rooted within each 5 cm $\times$ 5 cm cell of a 2 m $\times$ 2 m grid. Plant sampling will take place on the same day Malaise and pitfall traps are deployed in the field.  A tissue sample of each plant species at each sampling plot will be collected for DNA extraction and genetic analysis. Plant tissue samples will be stored offsite in 95% ethanol to preserve their DNA.
 
-**Soil sampling** during each of the 4 campaigns will make use of the same soil core used in the Berlese trap.  We will quantify 4 soil characteristics:
+**Soil sampling** during each of the 4 campaigns will collect 2 two cores: one that was taken to install the Berlese trap and one additional core. 
 
-1) Soil moisture will be measured by weighing soil cores before placing them in the Berlese traps (which will partially dry them) and after fully drying them.
-1) Soil bulk density will be used to evaluate porosity.
-2) Soil texture will be measured using a hydrometer.
-3) Soil chemical properties (total C, N, P) will be outsourced to Colorado State University.
-4) Soil microbial community will be measured by sequencing a small sample (stored in 95% ethanol) of each soil core using standard universal microbial primers (16S and ITS) in an Illumina HiSeq.
+We will quantify 3 soil physical characteristics:
+
+1) Soil moisture content will be measured by oven drying.
+2) Soil bulk density measured on the same soil core used for soil moisture content.  will be used to evaluate porosity.
+3) Soil texture will be measured by hydrometer.
+
+We will quantify 4 soil chemical characteristics:
+
+1) Total soil organic C
+2) Total soil N
+3) Total soil P
+4) Soil pH
+
+We will quantify one soil biological characteristic:
+
+1) Soil microbial community will be measured by sequencing a small sample (stored in 95% ethanol) of each soil core using standard universal microbial primers (16S and ITS) in an Illumina HiSeq.
 
 
 ### 14) Specifically identify location(s) and/or attach a map for the project:
@@ -175,19 +186,24 @@ NA
 
 ### 26) Specifically describe all major instrumentation/equipment/gear (i.e. use of drones) and materials used, if applicable or required:
 
+- 1 Malaise trap per plot.  This is a 2 m tall tent-like structure with a 1 m$^2$ footprint.  It is supported by a center pole mounted on a rebar stake hammered into the ground at the center of the plot; Malaise traps will be left out for 1 week.
+- 4 Pitfall traps per plot.  These are shallow holes in the ground containing a plastic container filled $1/3$ full with propylene glycol; pitfall traps will be left out for 1 week.
+- an AMS soil auger will be used to take soil cores.
+- all other instruments will be off-Refuge.
+
 ### 27a) Provide details and schedule for the installation of instrumentation:
 
-Malaise traps and pitfall traps are proposed to be installed by 15 May 2018.  We will insure that sensitive areas are not damaged by installing this equipment.
+With the exception of the center rebar stake (see section 26), all traps will be installed and removed within a on week period during the three sampling campaign specified in Section 27e. The initial campaign will take place in mid May 2018.
 
 
 ### 27b) Provide details and schedule for the removal of instrumentation:
 
-Equipment will be removed by 1 October 2018
+With the exception of the center rebar stake in each plot, all equipment will be removed by 1 October 2018
 
 
 ### 27c) If instrumentation is permanent, describe need:
 
-We request that a single rebar stake remain in place to mark the location of plots.
+We request that a single rebar stake remain in place to mark the location of each plot.
 
 
 ### 27d) If instrumentation requires a maintenance schedule, describe needs and schedule:
@@ -197,14 +213,13 @@ Maintenance is preformed when data are collected.
 
 ### 27e) Provide a data collection schedule:
 
-We propose to complete our 4 sampling campaigns (each 1 week in duration) as follows:
+We propose to complete our 3 sampling campaigns (each approximately 1 week in duration) as follows:
 
-- Campaign 1: middle May 2018
-- Campaign 2: late June 2018
-- Campaign 3: middle August 2018
-- Campaign 4: late September 2018
+- Campaign 1: middle May 2018; this campaign may take slightly longer than 1 week as we will also need to ground-truth plots before setting up equipment
+- Campaign 2: late July 2018
+- Campaign 3: late September 2018
 
-During each campaign plots will only be visited 2 to 3 times: once for set-up, once for take-down, and a potential third time if not all data (particularly plant surveys) can be collected within two days.
+During each campaign plots will be visited 2 to 3 times: once for set-up, once for take-down, and a potential third time if not all data (particularly plant surveys) can be collected within two days.
 
 
 ### 28) Provide logistical arrangements for offsite transportation of samples:
