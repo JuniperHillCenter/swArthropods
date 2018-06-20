@@ -6,19 +6,10 @@ source('make_candidate_points.R')
 
 mor <- readOGR('permits/rio_mora/rio_mora.kml', 'rio_mora.kml')
 morRoads <- readOGR('permits/rio_mora/rio_mora_roads.kml', 'rio_mora_roads.kml')
-
-plot(mor)
-plot(morRoads, col = 'red', add = TRUE)
-
-p <- makePoints(12, mor, morRoads)
-text(p@coords, labels = p$group)
+morShrub <- readOGR('permits/rio_mora/rio_mora_shrub.kml', 'rio_mora_shrub.kml')
 
 
-foo <- p
-
-
-
-
+# sat map
 rioMoraLoc <- c(lon = -105.067623, lat = 35.843262)
 rioMoraMap <- get_map(rioMoraLoc, zoom = 13, maptype = 'satellite', messaging = FALSE)
 
@@ -27,6 +18,11 @@ ylim <- c(35.815, 35.87)
 rioMora <- tidy(readOGR('permits/rio_mora/rio_mora_refuge.kml', 'rio_mora_refuge.kml'))
 rioMora <- rioMora[!rioMora$hole, ]
 rioMora <- cbind(rioMora, poly = 'Refuge boundary')
+
+pdf('permits/rio_mora/rioMora_candidate_points.pdf', width = 10, height = 7.5)
+
+p <- makePoints(12, region = mor, roads = morRoads, roadBuffer = 100, exclude = morShrub, 
+                dmin = 1000)
 
 ggmap(rioMoraMap) + 
     geom_polygon(data = rioMora, 
@@ -41,3 +37,7 @@ ggmap(rioMoraMap) +
           legend.position = 'none', 
           plot.margin = margin(0, 0, 0, 0, 'pt')) +
     scale_color_manual(values = c(hcl(seq(0, 300, length.out = length(unique(p$group)))), 'white'))
+
+dev.off()
+
+writeOGR(p, 'permits/rio_mora/rio_mora_candidate.kml', 'rio_mora_candidate', driver = 'KML', overwrite_layer = TRUE)
