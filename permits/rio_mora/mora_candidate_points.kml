@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="mora_candidate_points" id="mora_candidate_points">
+	<SimpleField name="group" type="int"></SimpleField>
+</Schema>
+<Folder><name>mora_candidate_points</name>
+  <Placemark>
+	<name>1</name>
+	<ExtendedData><SchemaData schemaUrl="#mora_candidate_points">
+		<SimpleData name="group">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-105.067631797356,35.8325774893236</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2</name>
+	<ExtendedData><SchemaData schemaUrl="#mora_candidate_points">
+		<SimpleData name="group">2</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-105.052217402803,35.8509339207962</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>3</name>
+	<ExtendedData><SchemaData schemaUrl="#mora_candidate_points">
+		<SimpleData name="group">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-105.095445990966,35.850205303804</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>4</name>
+	<ExtendedData><SchemaData schemaUrl="#mora_candidate_points">
+		<SimpleData name="group">4</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-105.054406886783,35.8231625535273</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>5</name>
+	<ExtendedData><SchemaData schemaUrl="#mora_candidate_points">
+		<SimpleData name="group">3</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-105.097106059293,35.8442627668461</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>6</name>
+	<ExtendedData><SchemaData schemaUrl="#mora_candidate_points">
+		<SimpleData name="group">5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-105.08637770566,35.8499707748215</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>7</name>
+	<ExtendedData><SchemaData schemaUrl="#mora_candidate_points">
+		<SimpleData name="group">5</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-105.085071550395,35.8424259721648</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>8</name>
+	<ExtendedData><SchemaData schemaUrl="#mora_candidate_points">
+		<SimpleData name="group">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-105.069502605224,35.8279639644003</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>9</name>
+	<ExtendedData><SchemaData schemaUrl="#mora_candidate_points">
+		<SimpleData name="group">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-105.060903400964,35.8280423437903</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>10</name>
+	<ExtendedData><SchemaData schemaUrl="#mora_candidate_points">
+		<SimpleData name="group">6</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-105.048543651268,35.8375376091118</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>11</name>
+	<ExtendedData><SchemaData schemaUrl="#mora_candidate_points">
+		<SimpleData name="group">7</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-105.075377742146,35.8564820856154</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>12</name>
+	<ExtendedData><SchemaData schemaUrl="#mora_candidate_points">
+		<SimpleData name="group">8</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-105.082108367904,35.8651117841523</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
