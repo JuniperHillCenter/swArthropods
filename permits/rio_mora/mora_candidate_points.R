@@ -19,10 +19,10 @@ rioMora <- tidy(readOGR('permits/rio_mora/rio_mora_refuge.kml', 'rio_mora_refuge
 rioMora <- rioMora[!rioMora$hole, ]
 rioMora <- cbind(rioMora, poly = 'Refuge boundary')
 
-pdf('permits/rio_mora/rioMora_candidate_points.pdf', width = 10, height = 7.5)
+pdf('permits/rio_mora/mora_candidate_points.pdf', width = 10, height = 7.5)
 
-p <- makePoints(12, region = mor, roads = morRoads, roadBuffer = 100, exclude = morShrub, 
-                dmin = 1000)
+# p <- makePoints(12, region = mor, roads = morRoads, roadBuffer = 100, exclude = morShrub, 
+#                 dmin = 1000)
 
 ggmap(rioMoraMap) + 
     geom_polygon(data = rioMora, 
@@ -40,4 +40,4 @@ ggmap(rioMoraMap) +
 
 dev.off()
 
-writeOGR(p, 'permits/rio_mora/rio_mora_candidate.kml', 'rio_mora_candidate', driver = 'KML', overwrite_layer = TRUE)
+writeOGR(p, 'permits/rio_mora/mora_candidate_points.kml', 'mora_candidate_points', driver = 'KML', overwrite_layer = TRUE)
