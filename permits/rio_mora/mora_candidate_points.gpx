@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<gpx version="1.1" creator="GDAL 2.1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<metadata><bounds minlat="35.823162553527297" minlon="-105.097106059292997" maxlat="35.865111784152298" maxlon="-105.048543651268005"/></metadata>              
+<wpt lat="35.832577489323597" lon="-105.067631797356">
+  <name>mor_A-01</name>
+</wpt>
+<wpt lat="35.850933920796201" lon="-105.052217402802995">
+  <name>mor_B-02</name>
+</wpt>
+<wpt lat="35.850205303804003" lon="-105.095445990965999">
+  <name>mor_C-03</name>
+</wpt>
+<wpt lat="35.823162553527297" lon="-105.054406886782999">
+  <name>mor_D-04</name>
+</wpt>
+<wpt lat="35.8442627668461" lon="-105.097106059292997">
+  <name>mor_C-05</name>
+</wpt>
+<wpt lat="35.8499707748215" lon="-105.086377705659999">
+  <name>mor_E-06</name>
+</wpt>
+<wpt lat="35.842425972164797" lon="-105.085071550395">
+  <name>mor_E-07</name>
+</wpt>
+<wpt lat="35.827963964400297" lon="-105.069502605224002">
+  <name>mor_A-08</name>
+</wpt>
+<wpt lat="35.828042343790301" lon="-105.060903400963994">
+  <name>mor_A-09</name>
+</wpt>
+<wpt lat="35.837537609111799" lon="-105.048543651268005">
+  <name>mor_F-10</name>
+</wpt>
+<wpt lat="35.856482085615397" lon="-105.075377742146003">
+  <name>mor_G-11</name>
+</wpt>
+<wpt lat="35.865111784152298" lon="-105.082108367903999">
+  <name>mor_H-12</name>
+</wpt>
+</gpx>

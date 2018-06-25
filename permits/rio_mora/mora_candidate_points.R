@@ -32,12 +32,23 @@ ggmap(rioMoraMap) +
                data = data.frame(coordinates(p), name = as.character(p$name), 
                                  group = as.character(p$group))) + 
     coord_fixed(ylim = ylim, ratio = 1 / cos(pi * mean(ylim) / 180)) + 
-    theme(axis.text = element_text(size = 0), axis.ticks = element_line(color = 'transparent', size = 0), 
+    theme(axis.text = element_text(size = 0), 
+          axis.ticks = element_line(color = 'transparent', size = 0), 
           axis.title = element_text(size = 0),
           legend.position = 'none', 
           plot.margin = margin(0, 0, 0, 0, 'pt')) +
-    scale_color_manual(values = c(hcl(seq(0, 300, length.out = length(unique(p$group)))), 'white'))
+    scale_color_manual(values = c(hcl(seq(0, 300, length.out = length(unique(p$group)))), 
+                                  'white'))
 
 dev.off()
 
-writeOGR(p, 'permits/rio_mora/mora_candidate_points.kml', 'mora_candidate_points', driver = 'KML', overwrite_layer = TRUE)
+writeOGR(p, 'permits/rio_mora/mora_candidate_points.kml', 'mora_candidate_points', 
+         driver = 'KML', overwrite_layer = TRUE)
+
+# for gps
+p@data <- data.frame(name = paste0('mor_', LETTERS[p$group], '-', 
+                                   gsub(' ', '0', format(p$name, width = 2, 
+                                                         justify = 'right'))))
+
+writeOGR(p, 'permits/rio_mora/mora_candidate_points.gpx', 'mora_candidate_points', 
+         driver = 'GPX')
