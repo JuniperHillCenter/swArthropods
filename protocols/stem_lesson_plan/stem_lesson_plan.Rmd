@@ -1,0 +1,76 @@
+---
+title: "Rio Mora STEM Lesson Plan"
+author: "A. J. Rominger"
+date: "September 19 and 20, 2018"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Learning objectives
+
+- Students will know that arthropods are incredibly diverse
+- Students will know that different habitats help contribute to that diversity
+- Students will understand what a taxonomic order is
+- Students will be able to identify common arthropod orders
+- Students will have an appreciation for good lab protocol
+
+## Lesson plan
+
+### Brief presentations (10 min)
+
+- Present the tree of life highlighting arthropods
+- Present the Sevilleta LTER and Rio Mora NWR as different habitats
+- Present the sampling that was done at each
+- Discuss the day's activities
+    - sorting arthropods 
+    - what is an order?
+    - "field marks" for common orders
+        - Arachnida
+            - Araneae (spiders)
+            - Acari (mites)
+            - Scorpiones (scorpions)
+            - Solifugae (camel spiders)
+        - Insecta
+            - Coleoptera (beetles)
+            - Diptera (flies)
+            - Hemiptera (true bugs)
+            - Hymenoptera (bees, wasps, ants)
+            - Lepidoptera (butterflies and moths)
+            - Orthoptera (grasshoppers and crickets)
+    - discuss the sorting protocol below using an example of an already sorted sample
+
+
+### Sorting protocol
+
+- Materials
+    - Each group of 2--4 students will be given two samples to sort to order, one from the Sevilleta, one from Rio Mora
+    - Each sample will be in a ziploc bag containing:
+        - the sample itself
+        - 4 labeled plastic bowls for dividing the sample as needed
+        - 50ml tubes for sorting orders into, each labeled by sampling location and order
+        - A data recording sheet
+    - In addition to the sample bag, each group will receive:
+        - Equipment for processing and cleanup
+            - forceps
+            - paper towels
+            - gloves
+            - a squirt bottle of propylene glycol
+        - An identification sheet with pictures of the common orders
+    - Several dissecting scopes will be available for the groups to share
+- Process (15 min x 2)
+    - Each group will begin by processing the Rio Mora sample followed by the Sevilleta sample, with cleanup after each sample is processed
+    - Processing
+        - One person will divide the sample into enough bowls such that each person can sort their own bowl
+        - Students will sort through their bowls, picking out individual arthropods, identifying them to order, and placing the identified specimen into the appropriate tube
+        - A tally will be kept on the data sheet of how many specimens of each order are found in each sample; these data sheets will be given to the instructor to tabulate
+- Cleanup (5 min x 2)
+    - all tubes will be capped and returned to their sample bag
+    - all bowls will be squirted with the propylene glycol, letting all the fluid drip back into the primary sample container
+    - the work area will be wiped down with paper towels
+- Discussion (10 min)
+    - After all sorting is complete we will discuss as a group any qualitative differences between the Sevilleta and Rio Mora
+    - We will quantitatively compare differences in the total number of arthropods and representation of different orders at the two different locations
+    - We will take general questions and comments time permitting 
