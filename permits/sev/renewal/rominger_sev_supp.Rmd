@@ -2,8 +2,8 @@
 title: 'Permit application for "Grassland arthropods across gradients: monitoring biodiversity and testing theory"'
 author: "PI: Andrew Rominger"
 output: pdf_document
-bibliography: ../permits.bib
-csl: ../institute-of-mathematical-statistics.csl
+bibliography: ../../permits.bib
+csl: ../../institute-of-mathematical-statistics.csl
 ---
 
 ```{r setup, include=FALSE, echo=FALSE}
@@ -19,15 +19,15 @@ opts_chunk$set(echo = FALSE)
 
 ### 13) Describe project by specifically identifying timing, frequency, and how the project is expected to proceed:
 
-We propose to collect taxonomic, genetic, and ecological data on arthropod communities at the Sevilleta National Wildlife Refuge (SNWF). We will focus primarily on grassland arthropods as part of a larger science and monitoring project throughout the state of New Mexico, including other National Wildlife Refuges.  We are interested in both establishing a monitoring program for arthropods (of which summer 2018 will be the pilot season) and testing specific hypotheses (detailed in section 16) relating to how arthropod biodiversity responds to gradients in climate, land-use, and environmental heterogeneity as measured by plant and soil diversity. SNWF is a central latitude and low elevation sampling location and represents a largely natural landscape.
+We propose to collect taxonomic, genetic, and ecological data on arthropod communities at the Sevilleta National Wildlife Refuge (SNWF). We will focus primarily on grassland arthropods as part of a larger science and monitoring project throughout the state of New Mexico, including other National Wildlife Refuges.  We are interested in both establishing a monitoring program for arthropods (of which summer 2019 will be the second season) and testing specific hypotheses (detailed in section 16) relating to how arthropod biodiversity responds to gradients in climate, land-use, and environmental heterogeneity as measured by plant and soil diversity. SNWF is a central latitude and low elevation sampling location and represents a largely natural landscape.
 
-If granted permission to operate on SNWF, we will establish our sampling plots (discussed in section 14) by the end of May 2018.  Arthropod, plant, and soil sampling will proceed from then until 1 October 2018.  Sampling will occur in 3 discrete campaigns (each 1 week long) during that period.  Below we describe sampling methods for arthropods, plants, and soils. Figure \ref{fig:layout} shows layout of sampling methods at each plot.
+If granted permission to operate on SNWF, we will re-sampler out plots (discussed in section 14) over 3 sampling campaigns during the period from May 2019 to September 2019.  Each sampling campaign will be 1 week long.  Below we describe sampling methods for arthropods, plants, and soils. Figure \ref{fig:layout} shows layout of sampling methods at each plot.
 
 ```{r, out.width='3in', fig.align='center', fig.cap='\\label{fig:layout}Aerial view of a sampling plot (not to scale). Numbers in soil cores indicate that only one soil core will be taken during each sampling campain, and the specific soil core taken will rotate clockwise around the edge of the Malaise trap. Plant survey quadrat will be randomly placed adjacent to the Malaise trap.'}
-include_graphics('../fig_sampling_layout.pdf')
+include_graphics('../../fig_sampling_layout.pdf')
 ```
 
-**Arthropod sampling techniques** during each of the 3 campaigns will consist of 4 methods:
+**Arthropod sampling techniques**
 
 1) Malaise trap: intercepts crawling and flying arthropods and collects them into a container of propylene glycol; 1 trap will be left out for 1 week
 2) Pitfall trap: intercepts crawling arthropods and collects them into a container of propylene glycol; 4 traps will be left out for 1 week.
@@ -38,9 +38,9 @@ Samples will be transported offsite and immediately processed. Specimens will be
 
 
 
-**Plant sampling** during each of the 3 campaigns will consist of recording the the identity of each plant found rooted within each 5 cm $\times$ 5 cm cell of a 2 m $\times$ 2 m grid. Plant sampling will take place on the same day Malaise and pitfall traps are deployed in the field.  A tissue sample of each plant species at each sampling plot will be collected for DNA extraction and genetic analysis. Plant tissue samples will be stored offsite in 95% ethanol to preserve their DNA.
+**Plant sampling** will consist of recording the the identity of each plant found rooted within each 5 cm $\times$ 5 cm cell of a 2 m $\times$ 2 m grid. Plant sampling will take place on the same day Malaise and pitfall traps are deployed in the field.  A tissue sample of each plant species at each sampling plot will be collected for DNA extraction and genetic analysis. Plant tissue samples will be stored offsite in 95% ethanol to preserve their DNA.
 
-**Soil sampling** during each of the 3 campaigns will collect 2 two cores: one that was taken to install the Berlese trap and one additional core. 
+**Soil sampling** will consist of 2 two cores: one that was taken to install the Berlese trap and one additional core. 
 
 We will quantify 3 soil physical characteristics:
 
@@ -62,9 +62,9 @@ We will quantify one soil biological characteristic:
 
 ### 14) Specifically identify location(s) and/or attach a map for the project:
 
-We will establish 7 grassland plots all at least 500 m distant from each other, and all within the polygon shown in Figure \ref{fig:map}. These plots will be established by generating a random set of candidate sites and then rejecting candidate sites that are abnormal (e.g. coincide with prairie dog or harvester ant mounds) or are sensitive from a management perspective. The sensitivity of candidate sites will be discussed with Refuge and LTER personnel.  Candidate site rejection will proceed until 7 final plots have been selected.
+We will sample at the Deep Well, Black Grama, and Blue Grama Core Sites (kml file attached).
 
-```{r, include=FALSE, cache=TRUE}
+```{r, include=FALSE, cache=TRUE, eval=FALSE}
 polyCol <- hsv(0.55, 0.6, 0.8)
 sampCol <- 'white'
 
@@ -78,7 +78,7 @@ sevAll <- rbind(cbind(tidy(sevPoly), poly = 'Refuge boundary'), cbind(tidy(sevSa
 sevAll <- sevAll[!sevAll$hole, ]
 ```
 
-```{r, cache=TRUE, fig.width=5.25, fig.height=3, fig.align='center', fig.cap='\\label{fig:map}Map of the Refuge boundary and proposed sampling area within which a total of 7 plots will be established.'}
+```{r, cache=TRUE, fig.width=5.25, fig.height=3, fig.align='center', fig.cap='\\label{fig:map}Map of the Refuge boundary and proposed sampling area within which a total of 7 plots will be established.', eval=FALSE}
 ylim <- c(34.15, 34.45)
 
 ggmap(sevMap) + 
@@ -98,7 +98,7 @@ ggmap(sevMap) +
 
 ### 15) Identify species or habitats being studied:
 
-All arthropod species will be considered.  We will focus primarily on grassland habitat (see Fig. \ref{fig:map}).
+All arthropod species will be considered.  We will focus primarily on grassland habitat.
 
 ### 16) Purpose/hypothesis:
 
@@ -115,7 +115,7 @@ Our expected benefits include documenting the response of arthropod, plant, and 
 
 ### 18) Briefly describe project history and context of research/monitoring project:
 
-This is a new project and this year will be its pilot season.  Our new work falls within the context of other arthropod research carried about by PI Rominger. The most relevant work (in terms of hypotheses tested and scale of sampling) includes a National Science Foundation funded project across public lands in the state of Hawaii resulting in three publications thus far [@rominger2015; @krehenwinkel2017; @romingerTREE]; and a Research Experience for Undergraduates project at the Sevilleta NWR/LTER from 2006--2007 resulting in one publication [@rominger2009].
+This is a relatively new project; the summer of 2018 was the pilot season and 2019 will be the first intensive data collection effort.  Our new work falls within the context of other arthropod research carried about by PI Rominger. The most relevant work (in terms of hypotheses tested and scale of sampling) includes a National Science Foundation funded project across public lands in the state of Hawaii resulting in three publications thus far [@rominger2015; @krehenwinkel2017; @romingerTREE]; and a Research Experience for Undergraduates project at the Sevilleta NWR/LTER from 2006--2007 resulting in one publication [@rominger2009].
 
 
 ### 19) Briefly describe project’s relationship to other research/monitoring projects either known of or conducted by the applicant:
@@ -144,7 +144,7 @@ The Juniper Hill Center (<http://juniperhillcenter.org>) will provide lab space 
 
 ### 22) Generally identify the anticipated timeline for analysis, write-up and publication:
 
-After each year's field sampling is completed, genetic data will be generated and analyzed within six months; a report of these results will be generated for documentation within our group and shared with the US Fish and Wildlife Service.  We anticipate our first scientific manuscript to be submitted within two years.
+After each year's field sampling is completed, genetic data will be generated and analyzed within 12 months; a report of these results will be generated for documentation within our group and shared with the US Fish and Wildlife Service.  We anticipate our first scientific manuscript to be submitted within two years.
 
 
 ### 23) For research involving animals, attach an Assurance of Animal Care Form or an approval from an Institutional Animal Care and Use Committee? Is a form or approval attached?
@@ -162,8 +162,10 @@ None.
 ### 24b) List and attach copies of any **insurance** you have (i.e general liability, flight/grounding, contaminants, medical evacuation, or others if required:
 
 ```{r}
-foo <- data.frame(c('Health insurance for Andrew Rominger', 'Health insurance for Linden Schneider'), 
-                  c('United Healthcare', 'United Healthcare'), c('1 January 2019', '1 January 2019'))
+foo <- data.frame(c('Health insurance for Andrew Rominger', 
+                    'Health insurance for Linden Schneider'), 
+                  c('United Healthcare', 'United Healthcare'), 
+                  c('1 January 2020', '1 January 2020'))
 names(foo) <- c('Insurance Type', 'Carrier', 'Expiration Date')
 kable(foo)
 ```
@@ -198,12 +200,12 @@ We will inquire further with Refuge and LTER personnel about the possibility of 
 
 ### 27a) Provide details and schedule for the installation of instrumentation:
 
-With the exception of the center rebar stake (see section 26), all traps will be installed and removed within a on week period during the three sampling campaign specified in Section 27e. The initial campaign will take place in mid May 2018.
+With the exception of the center rebar stake (see section 26), all traps will be installed and removed within a on week period during the three sampling campaign specified in Section 27e. The initial campaign will take place in mid May 2019.
 
 
 ### 27b) Provide details and schedule for the removal of instrumentation:
 
-With the exception of the center rebar stake in each plot, all equipment will be removed by 1 October 2018
+With the exception of the center rebar stake in each plot, all equipment will be removed by 1 October 2019
 
 
 ### 27c) If instrumentation is permanent, describe need:
@@ -220,9 +222,9 @@ Maintenance is preformed when data are collected.
 
 We propose to complete our 3 sampling campaigns (each approximately 1 week in duration) as follows:
 
-- Campaign 1: late May 2018; this campaign may take slightly longer than 1 week as we will also need to ground-truth plots before setting up equipment
-- Campaign 2: early August 2018
-- Campaign 3: late September 2018
+- Campaign 1: mid May 2019
+- Campaign 2: early July 2019
+- Campaign 3: mid September 2019
 
 During each campaign plots will be visited 2 to 3 times: once for set-up, once for take-down, and a potential third time if not all data (particularly plant surveys) can be collected within two days.
 
