@@ -1,0 +1,287 @@
+---
+title: 'Permit application for "Grassland arthropods across gradients: monitoring biodiversity and testing theory"'
+author: "PI: Andrew Rominger"
+output: pdf_document
+bibliography: ../permits.bib
+csl: ../institute-of-mathematical-statistics.csl
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+library(knitr)
+library(ggmap)
+library(ggplot2)
+library(broom)
+library(sp)
+library(rgdal)
+
+opts_chunk$set(echo = FALSE)
+```
+
+### 13) Describe project by specifically identifying timing, frequency, and how the project is expected to proceed:
+
+We propose to collect taxonomic, genetic, and ecological data on arthropod communities at the Sevilleta National Wildlife Refuge (SNWF). We will focus primarily on grassland arthropods as part of a larger science and monitoring project throughout the state of New Mexico, including other National Wildlife Refuges.  We are interested in both establishing a monitoring program for arthropods (of which summer 2018 will be the pilot season) and testing specific hypotheses (detailed in section 16) relating to how arthropod biodiversity responds to gradients in climate, land-use, and environmental heterogeneity as measured by plant and soil diversity. SNWF is a central latitude and low elevation sampling location and represents a largely natural landscape.
+
+If granted permission to operate on SNWF, we will establish our sampling plots (discussed in section 14) by the end of May 2018.  Arthropod, plant, and soil sampling will proceed from then until 1 October 2018.  Sampling will occur in 3 discrete campaigns (each 1 week long) during that period.  Below we describe sampling methods for arthropods, plants, and soils. Figure \ref{fig:layout} shows layout of sampling methods at each plot.
+
+```{r, out.width='3in', fig.align='center', fig.cap='\\label{fig:layout}Aerial view of a sampling plot (not to scale). Numbers in soil cores indicate that only one soil core will be taken during each sampling campain, and the specific soil core taken will rotate clockwise around the edge of the Malaise trap. Plant survey quadrat will be randomly placed adjacent to the Malaise trap.'}
+include_graphics('../fig_sampling_layout.pdf')
+```
+
+**Arthropod sampling techniques** during each of the 3 campaigns will consist of 4 methods:
+
+1) Malaise trap: intercepts crawling and flying arthropods and collects them into a container of propylene glycol; 1 trap will be left out for 1 week
+2) Pitfall trap: intercepts crawling arthropods and collects them into a container of propylene glycol; 4 traps will be left out for 1 week.
+3) Berlese trap: one soil core is taken at the sampling plot and transported off site where it is placed in a funnel with a light source above, which forces soil arthropods move downward, fall out of the core, and to collect in a container of ethanol; the soil core is taken on the same day that the Malaise and pitfall traps are removed from the field.  Soil cores of standard volume will be collected with an AMS soil auger.
+4) Sweep and aerial netting: 2 researchers use nets to collect arthropods from the air and vegetation over a circular area of 15 m radius and during a concerted sampling duration of 7 minutes; netting occurs on the same day that Malaise and pitfall traps are removed.
+
+Samples will be transported offsite and immediately processed. Specimens will be removed from the fluid into which they were collected and transferred to 95% ethanol to preserve their DNA. Vials containing specimens in ethanol will be labeled and databased using Darwin Core standards [@wieczorek2012].  Specimens will be sorted into orders and a subset will be furthered keyed out to species.  These fully keyed out specimens will be sequenced using a set of robust, phylogenetically informative arthropod primers [@krehenwinkel2017] on an Illumina HiSeq.  These voucher specimens will be deposited in the Museum of Southwestern Biology upon completion of the project.  All other specimens will be sacrificed to destructive genetic sampling technique that provides sequence data and abundance estimates for all species at extremely low cost [@krehenwinkel2017].
+
+
+
+**Plant sampling** during each of the 3 campaigns will consist of recording the the identity of each plant found rooted within each 5 cm $\times$ 5 cm cell of a 2 m $\times$ 2 m grid. Plant sampling will take place on the same day Malaise and pitfall traps are deployed in the field.  A tissue sample of each plant species at each sampling plot will be collected for DNA extraction and genetic analysis. Plant tissue samples will be stored offsite in 95% ethanol to preserve their DNA.
+
+**Soil sampling** during each of the 3 campaigns will collect 2 two cores: one that was taken to install the Berlese trap and one additional core. 
+
+We will quantify 3 soil physical characteristics:
+
+1) Soil moisture content will be measured by oven drying.
+2) Soil bulk density measured on the same soil core used for soil moisture content.  will be used to evaluate porosity.
+3) Soil texture will be measured by hydrometer.
+
+We will quantify 4 soil chemical characteristics:
+
+1) Total soil organic C
+2) Total soil N
+3) Total soil P
+4) Soil pH
+
+We will quantify one soil biological characteristic:
+
+1) Soil microbial community will be measured by sequencing a small sample (stored in 95% ethanol) of each soil core using standard universal microbial primers (16S and ITS) in an Illumina HiSeq.
+
+
+### 14) Specifically identify location(s) and/or attach a map for the project:
+
+We will establish 7 grassland plots all at least 500 m distant from each other, and all within the polygon shown in Figure \ref{fig:map}. These plots will be established by generating a random set of candidate sites and then rejecting candidate sites that are abnormal (e.g. coincide with prairie dog or harvester ant mounds) or are sensitive from a management perspective. The sensitivity of candidate sites will be discussed with Refuge and LTER personnel.  Candidate site rejection will proceed until 7 final plots have been selected.
+
+```{r, include=FALSE, cache=TRUE}
+polyCol <- hsv(0.55, 0.6, 0.8)
+sampCol <- 'white'
+
+sevLoc <- c(lon = -106.7, lat = 34.331287)
+sevMap <- get_map(sevLoc, zoom = 10, maptype = 'satellite', messaging = FALSE)
+
+sevPoly <- readOGR('SevilletaNWR_Boundary/SevilletaNWR_Boundary.shp', 'SevilletaNWR_Boundary')
+sevSamp <- readOGR('sevilleta.kml', 'sevilleta.kml')
+sevPoly <- spTransform(sevPoly, CRS(proj4string(sevSamp)))
+sevAll <- rbind(cbind(tidy(sevPoly), poly = 'Refuge boundary'), cbind(tidy(sevSamp), poly = 'Sampling area'))
+sevAll <- sevAll[!sevAll$hole, ]
+```
+
+```{r, cache=TRUE, fig.width=5.25, fig.height=3, fig.align='center', fig.cap='\\label{fig:map}Map of the Refuge boundary and proposed sampling area within which a total of 7 plots will be established.'}
+ylim <- c(34.15, 34.45)
+
+ggmap(sevMap) + 
+    geom_polygon(data = sevAll, 
+                 aes(long, lat, fill = poly, colour = poly),
+                 alpha = 0.3) +
+    coord_fixed(ylim = ylim, ratio = 1 / cos(pi * mean(ylim) / 180)) + 
+    theme(axis.text = element_text(size = 0), axis.ticks = element_line(color = 'transparent', size = 0),
+          axis.title = element_text(size = 0),
+          legend.position = c(0.8, 0.3), legend.title = element_blank(),
+          legend.background = element_rect(fill = 'transparent'), legend.key = element_rect(fill = 'transparent'),
+          legend.text = element_text(color = c('white')),
+          plot.margin = margin(0, 0, 0, 0, 'pt')) +
+    scale_fill_manual(values=c(polyCol, sampCol)) + scale_color_manual(values=c(polyCol, sampCol))
+```
+
+
+### 15) Identify species or habitats being studied:
+
+All arthropod species will be considered.  We will focus primarily on grassland habitat (see Fig. \ref{fig:map}).
+
+### 16) Purpose/hypothesis:
+
+We are interested in establishing long-term monitoring of arthropod diversity and populations in the Southwest.  The purpose of this monitoring is two-fold: First we hope to provide useful information to conservation practitioners about arthropods and their associated plant and soil microbial communities; second we seek to use these data to test several specific hypotheses:
+
+- **Climatic gradients**: Ecologists and evolutionary biologists have a long-standing interest in how diversity responds to broad climatic gradients such as those found across latitudes and elevations. Two central hypotheses in this field that we could like to address are whether such gradients in diversity are driven by historical factors (e.g. warm/more stable climates permit higher speciation rates and lower extinctions rates) or are driven by ecological factors (e.g. warm/more stable climates permit more primary productivity which facilitates greater coexistence of species). To address this debate we will sample grassland arthropods across latitudes and elevations in the state of New Mexico and evaluate whether changes in available resources (non-freezing days, moisture, biomass) or changes in evolutionary history better explain differences in diversity.
+- **Gradients of environmental heterogeneity**: Another key hypothesis is that biodiversity is driven by diversity, or heterogeneity, of the environment.  Here we will evaluate whether local and regional variation in plant communities and soil types predict arthropod diversity.  We will integrate our local samples of plant and soil diversity with large-scale regional assessments (e.g. soil maps from the USDA's Natural Resources and Conservation Services).
+- **Gradients of restoration**: The grasslands of the world have been vastly altered.  In addition to understanding how biotic communities respond to natural gradients, we must also understand how land-use and our efforts to restore natural landscapes shape biodiversity.  Here we hypothesize that the efficacy of restoration efforts will depend on whether communities are determined more by historical/regional factors or local/ecological factors (as tested in our previous two hypotheses). We also hypothesize that restoring the taxonomic composition of communities may depend more on these factors would restoring function---which could be largely independent of the deep evolutionary history of an area.
+
+
+### 17) Expected benefits of research/monitoring:
+
+Our expected benefits include documenting the response of arthropod, plant, and soil microbial communities to restoration efforts and changing regional climate.  This information can be helpful in managing for these groups, which often suffer from a lack of information, particularly in the case of arthropods and microbes.  We also anticipate benefits that can be generalized to other areas by embedding our results from SNWF within our broader sampling of arthropod, plant, and microbial communities across the state, and using this larger dataset to test the hypotheses in section 16.
+
+### 18) Briefly describe project history and context of research/monitoring project:
+
+This is a new project and this year will be its pilot season.  Our new work falls within the context of other arthropod research carried about by PI Rominger. The most relevant work (in terms of hypotheses tested and scale of sampling) includes a National Science Foundation funded project across public lands in the state of Hawaii resulting in three publications thus far [@rominger2015; @krehenwinkel2017; @romingerTREE]; and a Research Experience for Undergraduates project at the Sevilleta NWR/LTER from 2006--2007 resulting in one publication [@rominger2009].
+
+
+### 19) Briefly describe project’s relationship to other research/monitoring projects either known of or conducted by the applicant:
+
+We are aware of 6 highly relevant initiatives at SNWF:
+
+1) Marcy Litvak's Biome Transition Along Elevational Gradients in New Mexico
+2) Tim Lowrey's Sevilleta LTER Master Plant Species Information Database
+3) Karen Wright's Pollinator Monitoring Study
+4) Robert Sinsabaugh's Microbial Processes
+5) Scott Collins's Plant Line-Intercept Transects
+6) David Lightfoot's project to document orthopteran abundance and diversity
+
+We would be eager to engage with all these projects to help augment their data gathering, join efforts to test mutually interesting hypotheses, and compare potential biases in our different sampling methods.
+
+
+### 20) Identify the types of specimen collections to be taken (see specimen collection clause in the instruction section #20) or data to be collected during the proposed project:
+
+Arthropod specimens will be collected from all plots using the methods described in section 13. Voucher arthropod specimens will be deposited in the Museum of Southwestern Biology.  Plant tissue specimens will be taken and destructively sampled for DNA leaving no physical voucher.  Microbial specimen sequences will be obtained through destructive sampling of small amounts of soil, again leaving no physical voucher.  All sequence data will be archived and made publicly available through appropriate NCBI portals (e.g. <https://www.ncbi.nlm.nih.gov/genbank/>, <https://www.ncbi.nlm.nih.gov/sra>).
+
+
+### 21) List other cooperators and institutions involved in the project:
+
+The Juniper Hill Center (<http://juniperhillcenter.org>) will provide lab space for processing and storing specimens.  Collaborators at the University of California Berkeley will lab space and materials  for genetic analyses.
+
+
+### 22) Generally identify the anticipated timeline for analysis, write-up and publication:
+
+After each year's field sampling is completed, genetic data will be generated and analyzed within six months; a report of these results will be generated for documentation within our group and shared with the US Fish and Wildlife Service.  We anticipate our first scientific manuscript to be submitted within two years.
+
+
+### 23) For research involving animals, attach an Assurance of Animal Care Form or an approval from an Institutional Animal Care and Use Committee? Is a form or approval attached?
+
+No form, not working with vertebrates.
+
+
+# License/Insurance/Certifications/Permits
+
+### 24a) List and attach copies of any **licenses** you have for equipment operation (i.e., aviation or commercial boats), pesticide applications, transporters) or others if required:
+
+None.
+
+
+### 24b) List and attach copies of any **insurance** you have (i.e general liability, flight/grounding, contaminants, medical evacuation, or others if required:
+
+```{r}
+foo <- data.frame(c('Health insurance for Andrew Rominger', 'Health insurance for Linden Schneider'), 
+                  c('United Healthcare', 'United Healthcare'), c('1 January 2019', '1 January 2019'))
+names(foo) <- c('Insurance Type', 'Carrier', 'Expiration Date')
+kable(foo)
+```
+
+
+### 24c) List and attach copies of any **certifications** you have, such as rat free, hull inspections, CPR/First Aid, or others if required:
+
+None.
+
+
+### 24d) List and attach copies of any other Federal, State, or Tribal **permits** if required:
+
+None.
+
+# Logistics and Transportation
+
+### 25a) Does project require personnel to stay overnight on the refuge?
+
+Overnight stay is not technically required, although if accommodations are available at the LTER headquarters this could make some logistical considerations easier.
+
+### 25b) If yes, how many? And list known personnel involved in overnight stay below:
+
+We will inquire further with Refuge and LTER personnel about the possibility of overnight stay.  If overnight stay occurs it would be for 2 personnel from our project (Andrew Rominger and Linden Schneider) and be for at most 9 nights total---3 nights per sampling campaign described in section 27e.
+
+
+### 26) Specifically describe all major instrumentation/equipment/gear (i.e. use of drones) and materials used, if applicable or required:
+
+- 1 Malaise trap per plot.  This is a 2 m tall tent-like structure with a 1 m$^2$ footprint.  It is supported by a center pole mounted on a rebar stake hammered into the ground at the center of the plot; Malaise traps will be left out for 1 week.
+- 4 Pitfall traps per plot.  These are shallow holes in the ground containing a plastic container filled $1/3$ full with propylene glycol; pitfall traps will be left out for 1 week.
+- an AMS soil auger will be used to take soil cores.
+- all other instruments will be off-Refuge.
+
+### 27a) Provide details and schedule for the installation of instrumentation:
+
+With the exception of the center rebar stake (see section 26), all traps will be installed and removed within a on week period during the three sampling campaign specified in Section 27e. The initial campaign will take place in mid May 2018.
+
+
+### 27b) Provide details and schedule for the removal of instrumentation:
+
+With the exception of the center rebar stake in each plot, all equipment will be removed by 1 October 2018
+
+
+### 27c) If instrumentation is permanent, describe need:
+
+We request that a single rebar stake remain in place to mark the location of each plot.
+
+
+### 27d) If instrumentation requires a maintenance schedule, describe needs and schedule:
+
+Maintenance is preformed when data are collected.
+
+
+### 27e) Provide a data collection schedule:
+
+We propose to complete our 3 sampling campaigns (each approximately 1 week in duration) as follows:
+
+- Campaign 1: late May 2018; this campaign may take slightly longer than 1 week as we will also need to ground-truth plots before setting up equipment
+- Campaign 2: early August 2018
+- Campaign 3: late September 2018
+
+During each campaign plots will be visited 2 to 3 times: once for set-up, once for take-down, and a potential third time if not all data (particularly plant surveys) can be collected within two days.
+
+
+### 28) Provide logistical arrangements for offsite transportation of samples:
+
+Offsite transportation of samples will be by personal vehicle (detailed in section 29b-c)
+
+
+### 29a) Provide detailed information on the logistics for onsite, intersite, and/or ship-to-shore transportation to or on the refuge, if required:
+
+All transportation will be by personal vehicle (detailed in section 29b-c) on official Refuge roads, and by foot when travel off road is necessary.
+
+
+### 29b) Provide descriptions, license plate and/or identification numbers of vehicles used for onsite transportation, if required:
+
+```{r}
+foo <- data.frame(c('Subaru Crosstrek 2013 (tan)', 'Ford F150 2001 (white)'), 
+                  c('PFR309', '119TYT'))
+names(foo) <- c('Vehicle Type', 'Plate/I.D./Registration No.')
+kable(foo)
+```
+
+
+### 29c) Provide descriptions, license plate and/or identification numbers of vehicles used for intersite transportation, if required:
+
+```{r}
+kable(foo)
+```
+
+
+### 29d) Provide descriptions, license plate and/or identification numbers of vehicles used for ship-to-shore transportation, if required
+
+NA
+
+
+### 30a) Is fuel cache needed?
+
+No.
+
+### 30b) Provide specific location(s) of fuel caches:
+
+NA
+
+### 31) Attach Safety Plan if required. Is Safety Plan attached?
+
+Attached.
+
+
+# Work and Living Accommodations
+
+### 32) Specifically describe onsite work and/or living accommodations, including spike camps:
+
+Work will take place during daylight hours.  Food and water as specified in the Safety Plan will be available during onsite work.  Appropriate field gear will be used as specified in the Safety Plan.
+
+
+### 33) Specifically describe on or offsite hazardous material storage or other on or offsite material storage space:
+
+We will only use propylene glycol in the field, which is classified by the USDA as non-hazardous.  We will use ethanol (flammable and hazardous) offsite only. Ethanol will be stored only in small quantities and kept in tightly sealed containers in a well ventilated space.
+
+
+# References
